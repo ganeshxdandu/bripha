@@ -102,36 +102,36 @@ export default function CapabilitiesSection() {
                 }}
               />
 
-              {/* Top Row: Number & Category */}
-              <div className="relative z-10 flex items-center justify-between text-white/95">
-                <span className="font-outfit font-normal text-sm sm:text-[15px] tracking-wide">
+              {/* Top Row: Number & Category (Extra Light) */}
+              <div className="relative z-10 flex items-center justify-between text-white/90">
+                <span className="font-outfit font-extralight text-sm sm:text-[15px] tracking-wide">
                   {item.number}
                 </span>
-                <span className="font-outfit font-medium text-xs sm:text-[13px] tracking-wider uppercase">
+                <span className="font-outfit font-extralight text-xs sm:text-[13px] tracking-wider uppercase">
                   {item.category}
                 </span>
               </div>
 
               {/* Center Icon: Relevant SVG from public/icons folder */}
               <div className="relative z-10 my-auto py-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <div className="relative h-28 sm:h-28 lg:h-32 w-52 sm:w-52 lg:w-56 flex items-center justify-center">
+                <div className="relative h-32 sm:h-28 lg:h-32 w-56 sm:w-52 lg:w-56 flex items-center justify-center">
                   <Image
                     src={item.iconSrc}
                     alt={item.category}
                     width={item.iconWidth}
                     height={item.iconHeight}
                     unoptimized
-                    className="max-h-28 sm:max-h-28 lg:max-h-32 w-auto object-contain filter drop-shadow-sm brightness-105"
+                    className="max-h-32 sm:max-h-28 lg:max-h-32 w-auto object-contain filter drop-shadow-sm brightness-105"
                   />
                 </div>
               </div>
 
-              {/* Bottom Capacity Metric */}
+              {/* Bottom Capacity Metric: Bold & Large on Mobile */}
               <div className="relative z-10">
-                <div className="font-outfit font-medium text-4xl sm:text-5xl lg:text-[46px] leading-none text-white tracking-tight">
+                <div className="font-outfit font-medium text-[54px] sm:text-5xl lg:text-[46px] leading-none text-white tracking-tight">
                   {item.amount}
                 </div>
-                <div className="font-outfit font-medium text-xs sm:text-[13px] tracking-wider text-white/85 uppercase mt-2.5">
+                <div className="font-outfit font-medium text-xs sm:text-[13px] tracking-wider text-white/90 uppercase mt-2 sm:mt-2.5">
                   {item.unit}
                 </div>
               </div>

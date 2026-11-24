@@ -1019,10 +1019,10 @@ function CapabilitiesSection() {
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "relative z-10 flex items-center justify-between text-white/95",
+                                    className: "relative z-10 flex items-center justify-between text-white/90",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-outfit font-normal text-sm sm:text-[15px] tracking-wide",
+                                            className: "font-outfit font-extralight text-sm sm:text-[15px] tracking-wide",
                                             children: item.number
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CapabilitiesSection.tsx",
@@ -1030,7 +1030,7 @@ function CapabilitiesSection() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "font-outfit font-medium text-xs sm:text-[13px] tracking-wider uppercase",
+                                            className: "font-outfit font-extralight text-xs sm:text-[13px] tracking-wider uppercase",
                                             children: item.category
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CapabilitiesSection.tsx",
@@ -1046,14 +1046,14 @@ function CapabilitiesSection() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "relative z-10 my-auto py-3 flex items-center justify-center transition-transform duration-300 group-hover:scale-105",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative h-28 sm:h-28 lg:h-32 w-52 sm:w-52 lg:w-56 flex items-center justify-center",
+                                        className: "relative h-32 sm:h-28 lg:h-32 w-56 sm:w-52 lg:w-56 flex items-center justify-center",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: item.iconSrc,
                                             alt: item.category,
                                             width: item.iconWidth,
                                             height: item.iconHeight,
                                             unoptimized: true,
-                                            className: "max-h-28 sm:max-h-28 lg:max-h-32 w-auto object-contain filter drop-shadow-sm brightness-105"
+                                            className: "max-h-32 sm:max-h-28 lg:max-h-32 w-auto object-contain filter drop-shadow-sm brightness-105"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CapabilitiesSection.tsx",
                                             lineNumber: 118,
@@ -1073,7 +1073,7 @@ function CapabilitiesSection() {
                                     className: "relative z-10",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-outfit font-medium text-4xl sm:text-5xl lg:text-[46px] leading-none text-white tracking-tight",
+                                            className: "font-outfit font-medium text-[54px] sm:text-5xl lg:text-[46px] leading-none text-white tracking-tight",
                                             children: item.amount
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CapabilitiesSection.tsx",
@@ -1081,7 +1081,7 @@ function CapabilitiesSection() {
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "font-outfit font-medium text-xs sm:text-[13px] tracking-wider text-white/85 uppercase mt-2.5",
+                                            className: "font-outfit font-medium text-xs sm:text-[13px] tracking-wider text-white/90 uppercase mt-2 sm:mt-2.5",
                                             children: item.unit
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/CapabilitiesSection.tsx",

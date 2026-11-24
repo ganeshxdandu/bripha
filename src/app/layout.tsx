@@ -5,7 +5,6 @@ import "./globals.css";
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
-  weight: ["400", "500"],
   display: "swap",
 });
 

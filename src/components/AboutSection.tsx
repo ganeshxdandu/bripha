@@ -43,16 +43,13 @@ export default function AboutSection() {
             <div>
               {/* Section Heading: Exactly 36px on desktop, Medium weight 500 */}
               <h2 className="font-outfit font-medium text-2xl sm:text-3xl lg:text-[36px] lg:leading-[1.2] text-heading tracking-tight">
-                Guided By Quality.{' '}
-                <span className="text-[#1474B8]">Built On Trust.</span>
+                Manufacturing Backed by <br/>
+                <span className="text-[#1474B8]">Group Experience.</span>
               </h2>
 
               {/* Intro Paragraph: Exactly 16px body size, Regular weight 400 */}
               <p className="mt-4 sm:mt-5 text-[15px] sm:text-[16px] text-neutral-600 font-normal leading-relaxed tracking-tight">
-                Brindavan Phosphates Private Limited is a pharmaceutical manufacturing
-                company established as Unit II in 2016. The company operates from Panoli
-                GIDC Industrial Area, Ankleshwar, Gujarat, with its registered office
-                in Bengaluru, Karnataka.
+                BBrindavan Phosphates Private Limited is a pharmaceutical manufacturing company established as Unit II in 2016. The company operates from Panoli GIDC Industrial Area, Ankleshwar, Gujarat, with its registered office in Bengaluru, Karnataka.
               </p>
 
               {/* OUR MISSION Section */}
@@ -108,7 +105,7 @@ export default function AboutSection() {
             {/* Image Container: Stretches to 100% height of the left column */}
             <div className="relative w-full h-full min-h-[480px] lg:min-h-full rounded-none overflow-hidden shadow-2xl shadow-neutral-900/10 border border-neutral-200/60 bg-neutral-100 group">
               <Image
-                src="/images/about-facility.jpg"
+                src="/images/about-facility.png"
                 alt="Pharmaceutical Manufacturing Facility Cleanroom Corridor"
                 fill
                 priority

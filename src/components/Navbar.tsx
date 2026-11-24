@@ -9,10 +9,10 @@ import { Menu, X, ChevronRight } from 'lucide-react';
 const NAV_LINKS = [
   { name: 'Home', href: '#hero' },
   { name: 'Capabilities', href: '#capabilities' },
-  { name: 'Quality', href: '#about' },
-  { name: 'Facility', href: '#about' },
+  { name: 'Quality', href: '#quality' },
+  { name: 'Facility', href: '#facility' },
+  { name: 'Arrangements', href: '#arrangements' },
   { name: 'Group', href: '#about' },
-  { name: 'Contact', href: '#capabilities' },
 ];
 
 export default function Navbar() {
@@ -30,9 +30,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || mobileMenuOpen
           ? 'bg-white/90 backdrop-blur-md border-b border-slate-200/80 py-3 shadow-sm'
-          : 'bg-white/60 backdrop-blur-sm py-4 sm:py-5 border-b border-slate-100/60'
+          : 'bg-transparent py-4 sm:py-5 border-b border-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -68,10 +68,19 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center">
             <Link
               href="#capabilities"
-              className="inline-flex items-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] px-5 py-2.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98] group"
+              className="relative overflow-hidden inline-flex items-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] font-normal tracking-tight px-5 py-2.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98] group"
             >
-              <span>Partner With Us</span>
-              <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5" />
+              {/* Brushed Metal Texture Overlay */}
+              <div
+                className="absolute inset-0 opacity-35 mix-blend-overlay pointer-events-none transition-opacity duration-300 group-hover:opacity-50"
+                style={{
+                  backgroundImage: "url('/brushed_metal_texture.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              />
+              <span className="relative z-10">Partner With Us</span>
+              <ChevronRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5 relative z-10" />
             </Link>
           </div>
 
@@ -114,10 +123,19 @@ export default function Navbar() {
                 <Link
                   href="#capabilities"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] font-medium px-5 py-3 rounded-[3px] transition-all shadow-sm active:scale-[0.98]"
+                  className="relative overflow-hidden w-full flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] font-normal tracking-tight px-5 py-3 rounded-[3px] transition-all shadow-sm active:scale-[0.98] group"
                 >
-                  <span>Partner With Us</span>
-                  <ChevronRight className="w-4 h-4" />
+                  {/* Brushed Metal Texture Overlay */}
+                  <div
+                    className="absolute inset-0 opacity-35 mix-blend-overlay pointer-events-none transition-opacity duration-300 group-hover:opacity-50"
+                    style={{
+                      backgroundImage: "url('/brushed_metal_texture.png')",
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                    }}
+                  />
+                  <span className="relative z-10">Partner With Us</span>
+                  <ChevronRight className="w-4 h-4 relative z-10" />
                 </Link>
               </div>
             </div>

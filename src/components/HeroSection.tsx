@@ -83,10 +83,19 @@ export default function HeroSection() {
         >
           <Link
             href="#capabilities"
-            className="group inline-flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[13px] sm:text-[15px] px-5 py-2.5 sm:px-7 sm:py-3.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98] tracking-tight"
+            className="group relative overflow-hidden inline-flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[13px] sm:text-[15px] font-normal tracking-tight px-5 py-2.5 sm:px-7 sm:py-3.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98]"
           >
-            <span>Discuss Your Manufacturing Requirement</span>
-            <ChevronRight className="w-4 h-4 ml-0.5 transition-transform duration-200 group-hover:translate-x-0.5" />
+            {/* Brushed Metal Texture Overlay */}
+            <div
+              className="absolute inset-0 opacity-35 mix-blend-overlay pointer-events-none transition-opacity duration-300 group-hover:opacity-50"
+              style={{
+                backgroundImage: "url('/brushed_metal_texture.png')",
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            />
+            <span className="relative z-10">Discuss Your Manufacturing Requirement</span>
+            <ChevronRight className="w-4 h-4 ml-0.5 transition-transform duration-200 group-hover:translate-x-0.5 relative z-10" />
           </Link>
         </motion.div>
       </div>

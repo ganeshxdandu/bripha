@@ -8,8 +8,8 @@ const DOSAGE_FORMS = [
     number: '01',
     category: 'TABLETS',
     iconSrc: '/icons/tablets.svg',
-    iconWidth: 105,
-    iconHeight: 70,
+    iconWidth: 155,
+    iconHeight: 103,
     amount: '74.3M',
     unit: 'TABLETS / MONTH',
   },
@@ -17,8 +17,8 @@ const DOSAGE_FORMS = [
     number: '02',
     category: 'CAPSULES',
     iconSrc: '/icons/capsules.svg',
-    iconWidth: 105,
-    iconHeight: 70,
+    iconWidth: 155,
+    iconHeight: 103,
     amount: '8.3M',
     unit: 'CAPSULES / MONTH',
   },
@@ -26,8 +26,8 @@ const DOSAGE_FORMS = [
     number: '03',
     category: 'LIQUID ORALS',
     iconSrc: '/icons/liquid-orals.svg',
-    iconWidth: 85,
-    iconHeight: 75,
+    iconWidth: 165,
+    iconHeight: 110,
     amount: '1.4M',
     unit: 'BOTTLES / MONTH',
   },
@@ -35,8 +35,8 @@ const DOSAGE_FORMS = [
     number: '04',
     category: 'SEMISOLIDS',
     iconSrc: '/icons/semisolids.svg',
-    iconWidth: 110,
-    iconHeight: 75,
+    iconWidth: 206,
+    iconHeight: 138,
     amount: '3.7M',
     unit: 'TUBES / MONTH',
   },
@@ -60,9 +60,9 @@ export default function CapabilitiesSection() {
             className="max-w-xl"
           >
             <h2 className="font-outfit font-medium text-2xl sm:text-3xl lg:text-[36px] lg:leading-[1.2] text-heading tracking-tight">
-              Diverse Capabilities.
+              Four Dosage Forms.
               <br />
-              Consistent <span className="tracking-tight text-[#1474B8]">Commitment to Quality.</span>
+              Dedicated <span className="tracking-tight text-[#1474B8]">Manufacturing Sections.</span>
             </h2>
           </motion.div>
 
@@ -74,16 +74,14 @@ export default function CapabilitiesSection() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="max-w-lg"
           >
-            <p className="text-[15px] sm:text-[16px] text-neutral-600 font-normal leading-relaxed">
-              From tablets and capsules to liquid orals and semisolid formulations,
-              BRIPHA supports pharmaceutical businesses across a range of dosage
-              forms and manufacturing requirements.
+            <p className="text-[15px] sm:text-[16px] max-w-[475px] text-neutral-600 font-normal leading-relaxed">
+              Dedicated sections for tablets, capsules, oral liquids and semisolids support different formulation, batch-size, production and packaging requirements.
             </p>
           </motion.div>
         </div>
 
-        {/* 4 Cards Grid - Brushed Metal Texture on #1474B8 Brand Blue using exact uploaded SVGs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+        {/* 4 Cards Grid - 4:5 Aspect Ratio Brushed Metal Texture on #1474B8 Brand Blue */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-5">
           {DOSAGE_FORMS.map((item, index) => (
             <motion.div
               key={item.category + item.number}
@@ -92,7 +90,7 @@ export default function CapabilitiesSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -4 }}
-              className="relative bg-[#1474B8] text-white p-7 sm:p-8 flex flex-col justify-between min-h-[420px] lg:min-h-[440px] rounded-none shadow-xl shadow-brand-500/10 overflow-hidden group select-none transition-transform duration-300"
+              className="relative bg-[#1474B8] text-white p-5 sm:p-5 lg:p-6 flex flex-col justify-between aspect-[4/5] rounded-none shadow-xl shadow-brand-500/10 overflow-hidden group select-none transition-transform duration-300"
             >
               {/* Brushed Metal Texture Overlay from uploaded root asset */}
               <div
@@ -106,30 +104,31 @@ export default function CapabilitiesSection() {
 
               {/* Top Row: Number & Category */}
               <div className="relative z-10 flex items-center justify-between text-white/90">
-                <span className="font-outfit font-normal text-xs sm:text-[13px] tracking-wide">
+                <span className="font-outfit font-extralight text-xs sm:text-[13px] tracking-wide">
                   {item.number}
                 </span>
-                <span className="font-outfit font-normal text-[11px] sm:text-xs tracking-wider uppercase">
+                <span className="font-outfit font-extralight text-[11px] sm:text-xs tracking-wider uppercase">
                   {item.category}
                 </span>
               </div>
 
-              {/* Center Icon: Using the exact SVG uploaded in root folder */}
-              <div className="relative z-10 my-auto py-6 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <div className="relative h-20 w-28 flex items-center justify-center">
+              {/* Center Icon: Relevant SVG from public/icons folder */}
+              <div className="relative z-10 my-auto py-1 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <div className="relative h-20 sm:h-24 lg:h-28 w-36 sm:w-44 lg:w-48 flex items-center justify-center">
                   <Image
                     src={item.iconSrc}
                     alt={item.category}
                     width={item.iconWidth}
                     height={item.iconHeight}
-                    className="object-contain filter drop-shadow-sm brightness-105"
+                    unoptimized
+                    className="max-h-20 sm:max-h-24 lg:max-h-28 w-auto object-contain filter drop-shadow-sm brightness-105"
                   />
                 </div>
               </div>
 
               {/* Bottom Capacity Metric */}
               <div className="relative z-10">
-                <div className="font-outfit font-medium text-4xl sm:text-[42px] leading-none text-white tracking-tight">
+                <div className="font-outfit font-medium text-3xl sm:text-4xl lg:text-[40px] leading-none text-white tracking-tight">
                   {item.amount}
                 </div>
                 <div className="font-outfit font-normal text-[11px] sm:text-xs tracking-wider text-white/80 uppercase mt-2">

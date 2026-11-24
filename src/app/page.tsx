@@ -2,6 +2,9 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AboutSection from '@/components/AboutSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
+import QualitySection from '@/components/QualitySection';
+import FacilitySection from '@/components/FacilitySection';
+import ArrangementsSection from '@/components/ArrangementsSection';
 
 export default function Home() {
   return (
@@ -18,6 +21,15 @@ export default function Home() {
 
         {/* Section 3: Different Dosage Forms. One Manufacturing Partner. */}
         <CapabilitiesSection />
+
+        {/* Section 4: Quality Control Across Every Stage. */}
+        <QualitySection />
+
+        {/* Section 5: A Facility Built Around Manufacturing. */}
+        <FacilitySection />
+
+        {/* Section 6: Contract Manufacturing Arrangements. */}
+        <ArrangementsSection />
       </main>
     </div>
   );

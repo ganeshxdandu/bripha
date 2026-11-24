@@ -131,7 +131,7 @@ export default function CapabilitiesSection() {
                 <div className="font-outfit font-medium text-[54px] sm:text-5xl lg:text-[46px] leading-none text-white tracking-tight">
                   {item.amount}
                 </div>
-                <div className="font-outfit font-medium text-xs sm:text-[13px] tracking-wider text-white/90 uppercase mt-2 sm:mt-2.5">
+                <div className="font-outfit font-extralight text-xs sm:text-[13px] tracking-wider text-white/90 uppercase mt-2 sm:mt-2.5">
                   {item.unit}
                 </div>
               </div>

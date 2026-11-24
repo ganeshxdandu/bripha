@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-heading: #132939;
+  --brand-50: #f0f7fc;
+  --brand-100: #e1eff8;
+  --brand-200: #b8dcf1;
+  --brand-300: #82c2e7;
+  --brand-400: #42a2dc;
+  --brand-500: #1474b8;
+  --brand-600: #10609b;
+  --brand-700: #0d4c7c;
+  --brand-800: #09375a;
+  --brand-900: #06253c;
+  --brand-950: #031422;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-outfit), 'Outfit', sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.025em;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #1474b8;
+  color: #ffffff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8dcf1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1474b8;
+}
+
+/* Brushed metal overlay effect */
+.texture-overlay {
+  background-image: url('/brushed_metal_texture.png');
+  background-repeat: repeat;
+  background-size: 400px;
+}

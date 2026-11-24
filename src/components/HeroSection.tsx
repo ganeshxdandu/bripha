@@ -51,7 +51,7 @@ export default function HeroSection() {
       />
 
       {/* Content: Balanced on mobile, calibrated on desktop */}
-      <div className="relative z-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-28 lg:pt-36 xl:pt-40 flex flex-col items-center">
+      <div className="relative z-20 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-44 sm:pt-48 lg:pt-36 xl:pt-40 flex flex-col items-center">
         {/* Main Headline: 52px on desktop (medium, -3% tracking, 100% line height); tuned for mobile */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="relative mt-8 sm:mt-10 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden"
+        className="relative mt-16 sm:mt-20 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden"
       >
         <Image
           src="/hero.png"

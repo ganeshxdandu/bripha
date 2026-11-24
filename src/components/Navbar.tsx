@@ -7,12 +7,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronRight } from 'lucide-react';
 
 const NAV_LINKS = [
-  { name: 'Home', href: '#hero' },
+  { name: 'About', href: '#about' },
   { name: 'Capabilities', href: '#capabilities' },
   { name: 'Quality', href: '#quality' },
   { name: 'Facility', href: '#facility' },
-  { name: 'Arrangements', href: '#arrangements' },
-  { name: 'Group', href: '#about' },
+  { name: 'Our Group', href: '#group' },
 ];
 
 export default function Navbar() {
@@ -51,7 +50,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-8 xl:space-x-10">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-8">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.name}
@@ -67,7 +66,7 @@ export default function Navbar() {
           {/* Desktop CTA Button */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="#capabilities"
+              href="#contact"
               className="relative overflow-hidden inline-flex items-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] font-normal tracking-tight px-5 py-2.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98] group"
             >
               {/* Brushed Metal Texture Overlay */}
@@ -121,7 +120,7 @@ export default function Navbar() {
               ))}
               <div className="pt-3">
                 <Link
-                  href="#capabilities"
+                  href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
                   className="relative overflow-hidden w-full flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[14px] font-normal tracking-tight px-5 py-3 rounded-[3px] transition-all shadow-sm active:scale-[0.98] group"
                 >

@@ -82,7 +82,7 @@ export default function HeroSection() {
           className="mt-5 sm:mt-7"
         >
           <Link
-            href="#capabilities"
+            href="#contact"
             className="group relative overflow-hidden inline-flex items-center justify-center gap-1.5 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[13px] sm:text-[15px] font-normal tracking-tight px-5 py-2.5 sm:px-7 sm:py-3.5 cursor-pointer transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-blue-900/15 active:scale-[0.98]"
           >
             {/* Brushed Metal Texture Overlay */}

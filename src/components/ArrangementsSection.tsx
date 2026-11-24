@@ -94,7 +94,7 @@ export default function ArrangementsSection() {
             className="w-full sm:w-auto shrink-0"
           >
             <Link
-              href="#capabilities"
+              href="#contact"
               className="relative overflow-hidden w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#0B63B6] hover:bg-[#094F92] text-white text-[13.5px] sm:text-[14px] font-normal tracking-tight px-5 sm:px-6 py-3 transition-all duration-200 shadow-sm hover:shadow-md active:scale-[0.98] group"
             >
               {/* Brushed Metal Texture Overlay */}

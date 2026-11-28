@@ -334,7 +334,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 function HeroSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         id: "hero",
-        className: "relative w-full h-auto lg:h-[100dvh] lg:min-h-[660px] overflow-hidden bg-white select-none",
+        className: "relative w-full h-[90vh] lg:h-[100dvh] lg:min-h-[660px] overflow-hidden bg-white select-none",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                 animate: {
@@ -401,7 +401,7 @@ function HeroSection() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-20 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-44 sm:pt-48 lg:pt-36 xl:pt-40 flex flex-col items-center",
+                className: "relative z-20 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center h-full flex flex-col justify-center items-center pb-24 sm:pb-32 lg:h-auto lg:justify-start lg:pt-36 xl:pt-40 lg:pb-0",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
                         initial: {
@@ -421,7 +421,7 @@ function HeroSection() {
                                 1
                             ]
                         },
-                        className: "font-outfit font-medium text-[28px] sm:text-[38px] md:text-[46px] lg:text-[52px] text-heading tracking-tight lg:tracking-[-0.03em] leading-[1.16] lg:leading-[1.0]",
+                        className: "font-outfit font-medium text-[35px] sm:text-[40px] md:text-[46px] lg:text-[52px] text-heading tracking-tight lg:tracking-[-0.03em] leading-[1.14] lg:leading-[1.0]",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "block",
@@ -558,7 +558,7 @@ function HeroSection() {
                         1
                     ]
                 },
-                className: "relative mt-16 sm:mt-20 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden",
+                className: "absolute bottom-0 left-0 right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                     src: "/hero.png",
                     alt: "Pharmaceutical Manufacturing Packaging, Bottles, Tablets & Capsules",

@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative w-full h-auto lg:h-[100dvh] lg:min-h-[660px] overflow-hidden bg-white select-none"
+      className="relative w-full h-[90vh] lg:h-[100dvh] lg:min-h-[660px] overflow-hidden bg-white select-none"
     >
       {/* Background Hexagonal Tile Polka Dot Pattern with Subtle Wave Motion */}
       <motion.div
@@ -50,14 +50,14 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Content: Balanced on mobile, calibrated on desktop */}
-      <div className="relative z-20 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center pt-44 sm:pt-48 lg:pt-36 xl:pt-40 flex flex-col items-center">
+      {/* Content: Balanced and vertically centered on mobile, calibrated on desktop */}
+      <div className="relative z-20 max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center h-full flex flex-col justify-center items-center pb-24 sm:pb-32 lg:h-auto lg:justify-start lg:pt-36 xl:pt-40 lg:pb-0">
         {/* Main Headline: 52px on desktop (medium, -3% tracking, 100% line height); tuned for mobile */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="font-outfit font-medium text-[28px] sm:text-[38px] md:text-[46px] lg:text-[52px] text-heading tracking-tight lg:tracking-[-0.03em] leading-[1.16] lg:leading-[1.0]"
+          className="font-outfit font-medium text-[35px] sm:text-[40px] md:text-[46px] lg:text-[52px] text-heading tracking-tight lg:tracking-[-0.03em] leading-[1.14] lg:leading-[1.0]"
         >
           <span className="block">Global Trust Through</span>
           <span className="block mt-0.5 lg:mt-0">Local Excellence</span>
@@ -100,12 +100,12 @@ export default function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Bottom 3D Dosage Forms Packaging Render (Substantial frame on mobile, Pinned Absolute on desktop) */}
+      {/* Bottom 3D Dosage Forms Packaging Render (Pinned Absolute to bottom across mobile and desktop) */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="relative mt-16 sm:mt-20 lg:mt-0 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden"
+        className="absolute bottom-0 left-0 right-0 w-full z-10 leading-none select-none pointer-events-none overflow-hidden"
       >
         <Image
           src="/hero.png"

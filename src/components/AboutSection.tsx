@@ -105,7 +105,7 @@ export default function AboutSection() {
             {/* Image Container: Stretches to 100% height of the left column */}
             <div className="relative w-full h-full min-h-[480px] lg:min-h-full rounded-none overflow-hidden shadow-2xl shadow-neutral-900/10 border border-neutral-200/60 bg-neutral-100 group">
               <Image
-                src="/images/about-manufacturing-facility.png"
+                src="/about.png"
                 alt="BRIPHA Advanced Pharmaceutical Formulations & Manufacturing Processing Plant"
                 fill
                 priority

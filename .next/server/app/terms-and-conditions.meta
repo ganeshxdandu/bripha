@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/terms-and-conditions/layout,_N_T_/terms-and-conditions/page,_N_T_/terms-and-conditions"
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/187eb0d686ec18224a2825add0cc1a169debdb5ebb2699b6c5a368bcfc3c3937/$/terms-and-conditions",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/terms-and-conditions/page"
+    },
+    "isFallback": false
+  }
+}

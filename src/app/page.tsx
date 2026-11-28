@@ -4,6 +4,7 @@ import AboutSection from '@/components/AboutSection';
 import CapabilitiesSection from '@/components/CapabilitiesSection';
 import QualitySection from '@/components/QualitySection';
 import FacilitySection from '@/components/FacilitySection';
+import GallerySection from '@/components/GallerySection';
 import GroupSection from '@/components/GroupSection';
 import ArrangementsSection from '@/components/ArrangementsSection';
 import ProductRangeBanner from '@/components/ProductRangeBanner';
@@ -33,7 +34,10 @@ export default function Home() {
         {/* Section 5: A Facility Built Around Manufacturing. */}
         <FacilitySection />
 
-        {/* Section 6: The Kamadhenu–Brindavan Group */}
+        {/* Section 6: Facility Infrastructure & Cleanrooms Gallery */}
+        <GallerySection />
+
+        {/* Section 7: The Kamadhenu–Brindavan Group */}
         <GroupSection />
 
         {/* Section 7: Contract Manufacturing Arrangements. */}
